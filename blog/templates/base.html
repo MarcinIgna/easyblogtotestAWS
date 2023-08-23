@@ -1,0 +1,16 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{% url 'blog:main' %}">Home</a></li>
+      <li><a href="{% url 'blog:new_post' %}">New Post</a></li>
+    </ul>
+  </nav>
+  {% block content %}{% endblock %}
+</body>
+</html>

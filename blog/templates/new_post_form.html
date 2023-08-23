@@ -1,0 +1,17 @@
+<!-- new_post_form.html -->
+<form method="post">
+    {% csrf_token %}
+    <div>
+      <label for="{{ form.title.id_for_label }}">Title:</label>
+      {{ form.title }}
+    </div>
+    <div>
+      <label for="{{ form.content.id_for_label }}">Content:</label>
+      {{ form.content }}
+    </div>
+    <div>
+      <label for="{{ form.author.id_for_label }}">Author:</label>
+      {{ form.author }}
+    </div>
+    <button type="submit">Submit</button>
+  </form>
